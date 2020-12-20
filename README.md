@@ -2,7 +2,7 @@
 ```
 Hosted web app Link
 ```
-<a href="https://rohit-orgzit-assignment.netlify.app/"> Click Here for visite my web-application </a>
+<p><a href="https://rohit-orgzit-assignment.netlify.app/"> Click here  </a> to go to my web-application</p>
 
 
 # Create a new project
