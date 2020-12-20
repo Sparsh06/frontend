@@ -11,6 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* INPUT BOX */
 .input__box{
   width: 600px;
   margin: 50px auto;
@@ -22,7 +24,7 @@ code {
   border: none;
   border-bottom: 1px solid black;
 }
-button{
+.btn{
   height: 45px;
   width: 130px;
   background-color: #3BB273;
@@ -35,6 +37,19 @@ button{
   cursor: pointer;
 }
 
+/* USER NOT FOUND */
+
+.username__notfound, .zero_repo{
+  margin: 100px auto;
+  width: 500px;
+  background-color: #E15554;
+  color: aliceblue;
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
 .details{
   background-color: lightgray;
   width: 600px;
@@ -43,7 +58,7 @@ button{
   font-weight: 800;
   font-size: 25px;
   padding: 10px;
-  background-color: #E15554;
+  /* background-color: #E15554; */
 }
 .details__user{
   height: 100px;

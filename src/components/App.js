@@ -11,12 +11,6 @@ class App extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   fetch("https://api.github.com/users/rks107/repos")
-  //     .then((response) => response.json())
-  //     .then((data) => console.log(data));
-  // }
-
   handleOnChange = (e) => {
     this.setState({
       username: e.target.value,
@@ -26,6 +20,12 @@ class App extends Component {
   handleSubmit = () => {
     let username = this.state.username;
     
+    if(username === ''){
+      alert("Please enter your user name...");
+      return;
+    }
+
+
     fetch(`https://api.github.com/users/${username}/repos`)
       .then((response) => response.json())
       .then((data) =>
@@ -48,7 +48,7 @@ class App extends Component {
             value={this.state.name}
             placeholder='Enter your user name...'
           />
-          <button onClick={this.handleSubmit}>Submit</button>
+          <button className="btn" onClick={this.handleSubmit}>Submit</button>
         </div>
 
         {showDetails ? <RepoDetails data={repo} username={username} /> : null}
