@@ -41,6 +41,10 @@ class App extends Component {
     const { showDetails, repo, username } = this.state;
     return (
       <div>
+        <div className='navbar'>
+          <h2>Github user</h2>
+        </div>
+        
         <div className='input__box'>
           <input
             type='text'
